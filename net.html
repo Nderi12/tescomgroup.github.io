@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<title>Tescom Group Ltd</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="tstyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Ascom.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">Our Services <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="proj.html" class="w3-bar-item w3-button">Project Management Services</a>
+        <a href="train.html" class="w3-bar-item w3-button">Technical Training</a>
+        <a href="net.html" class="w3-bar-item w3-button">Network Planning and Optimization</a>
+        <a href="civil.html" class="w3-bar-item w3-button">Telecommunication</a>
+      </div>
+    </div>
+    <a href="cont.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact Us</a>
+    <a href="index.html" class="w3-padding-large w3-hover-white w3-hide-small w3-right"><i class="fa fa-home"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="Ascom.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About us</a>
+  <a href="cont.php" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:60px 16px">
+    <div class="w3-container">
+        <h1 class="w3-center">Network Planning and Optimization</h1><hr>
+
+            <h3>RF Network planning and Design services</h3>
+      <p>Outsourcing system design and optimization to Ascom would allow our customers to tap the expertise, efficiency, and cost-effectiveness that result in significant savings and a successful enterprise. We have a team of highly experienced engineers. Our design capabilities encompass all technologies CDMA, UMTS, GSM, LMDS. <br>
+        <h3>The full spectrum of our RF planning and design services includes:</h3>
+        <br>- Coverage planning: computer aided network analysis for coverage predictions
+<br>- Field Surveys for site selection
+<br>- Cell planning: based on the traffic analysis as per the population distribution
+<br>- Frequency planning and interference studies</p>    
+<img src="http://www.tescomgroup.com/ascom/images/stories/download_004.png">
+      <h3>Transmission Planning and design services</h3>
+      <p>Our in-house design experts borrowing from many years of experience can design any size system to your specific requirements—from a single microwave radio link to a nationwide network, from the lowest capacity to very high N+1 long haul capacities. We have advanced expertise in transmission design for cellular network both 2G and 3 G as well as for general purpose uses.</p>
+      <h3>The full spectrum of our transmission planning and design services includes:</h3>
+      <p>- Field Surveys and studies
+      <br>- Network topology development and capacity planning
+      <br>- Network engineering to meet the required EPO
+      <br>- Equipment type approval and other regulatory applications
+      <br>- Frequency planning and interference studies
+      <br>- Provision of full specifications, configuration and complete documentation of microwave radio systems and additional equipment including antennas and multiplexing equipments.
+</p>
+<img src="http://www.tescomgroup.com/ascom/images/stories/download_003.png">
+      <h3>Network Optimization Services</h3>
+      <p>Ascom offers a unique method of evaluating competitive performance by analyzing footprint (RF coverage), population, traffic handling, call quality, and indoor coverage. We do comparisons among these statistics, from which Ascom makes recommendations for improvement in existing deployment, additional deployments.</p>
+      <img src="http://www.tescomgroup.com/ascom/images/stories/securedownload.png">
+      <h3>The full spectrum of our Network optimization services includes:</h3>
+      <p>- Field measurements to evaluate network coverage, call success rates, call drops and general network quality
+        <br>- Analysis of the field measurements and documenting recommendations.
+        <br>- Analysis of the frequency plans and improvements
+        <br>- Correction of antenna azimuths
+        <br>- Optimization of the antennas heights to reduce interferences and improve coverage
+        <br>- Design and implementation of indoor coverage solution
+        <br>- Tuning of BSS parameters to improve network performance
+        <br>- Analysis of the frequency plans and improvements
+        <br>- Correction of antenna azimuths
+        <br>- Optimization of the antennas heights to reduce interferences and improve coverage
+        <br>- Design and implementation of indoor coverage solution</p>
+
+    </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <p>Copyright @ 2018 <a href="http://www.tescomgroup.com/" title="Tescom Group" class="w3-hover-text-green">Tescom Group</a>. All Rights Reserved</p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>

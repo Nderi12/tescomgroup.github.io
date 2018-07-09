@@ -1,0 +1,260 @@
+
+body, html {
+    height: 100%;
+    color: #000;
+    line-height: 1.;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('https://static.kent.ac.uk/nexus/ems/91.jpg');
+    min-height: 50%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("http://www.smartvalue.biz/wp-content/uploads/2015/08/aboutus.jpg");
+    min-height: 600px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("http://istarwebsolutions.com/wp-content/uploads/2015/07/About-Us.jpg");
+    min-height: 600px;
+}
+
+/*Fourth image (full logo)*/
+.bgimg-4 {
+	background-image: url(https://marketingconsultantorangecounty.com/wp-content/uploads/2015/03/Contact-Us-Hero-Image.jpg);
+	min-height: 600px;
+}
+.bgimg-5 {
+  background: url(https://www.empower.eu/documents/10192/10710/Frontpage+main+image/0c5a571f-4cb0-44a2-aa96-58eda09fab61?t=1378987995000);
+  min-height: 300px;
+}
+.bgimg-6{
+  background-image: url(http://static.wixstatic.com/media/db4bbf_60a95c6719df4aea8b5aa24071a41003~mv2.png);
+  min-height: 300px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+        background-attachment: scroll;
+    }
+}
+html { 
+  background: url(http://www.solidbackgrounds.com/images/2560x1440/2560x1440-white-solid-color-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-text-size-adjust: 50%;
+  -webkit-text-size-adjust: 50%;
+}
+
+body
+{
+padding:0;
+font-size:12px;
+margin:0px auto auto auto;
+}
+
+.header {
+	background-position: absolute;
+	background-image: url(cssimages/background_3.jpg);
+	background-position: fixed;
+	background-size: auto;
+	width: 100%;
+	display: block;
+	height: 30px;
+	padding:30px;
+	float: right;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 30px;
+}
+.logo {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image: url(http://aurak.ac.ae/en/wp-content/uploads/2016/05/ECE-Dept.jpg);
+}
+.wrap{
+	width:1350px;
+	margin:auto;
+}
+/*________#menu_______*/
+#menu {
+	width:100%;
+	position: fixed;
+	overflow: hidden;
+}
+
+#menu ul {
+list-style: none;
+padding: 0px;
+margin: 16px 0 0;
+text-align: center;
+position: relative;
+}
+
+#menu ul li {
+display: inline;
+padding: 0px;
+position: relative;
+}
+#menu ul li a {
+display: inline;
+padding: 20px 50px;
+color: #FFFFFF;
+font-size: 1em;
+border-bottom: none;
+text-transform: uppercase;
+font-weight: bold;
+letter-spacing: 1px;
+}
+#menu ul li a:hover {
+	color: #777;
+	text-decoration: none;
+    opacity:0.5;
+}
+
+/*--------------main_content-----------------*/
+.main_content{
+width:960px;
+clear:both;
+padding:80px 0px 0px 40px;
+}
+
+.w3_center{
+padding-left: 50px;
+padding-right: 50px
+}
+
+.mid_content{
+width:500px;
+float:center;
+padding:0px 0 0 20px;
+}
+.left_content{
+width:500px;
+float:left;
+padding:20px;
+padding-left: 100px;
+}
+.right_content{
+width:500px;
+float:right;
+padding:0px 0 0 0px;
+}
+.logo{
+	width: 1400px;
+	height:350px;
+}
+.h1 {
+  	color: #000;
+	font-size: 15px;
+	float:center;
+}
+.h2{
+	color: #fff;
+	font-size:5px;
+	float: center
+}
+.h3{
+	color: #000
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
